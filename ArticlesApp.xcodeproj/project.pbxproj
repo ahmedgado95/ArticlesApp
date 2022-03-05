@@ -30,6 +30,7 @@
 		F87A689C27D35C2A00F0B2CB /* UITableView+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A689B27D35C2A00F0B2CB /* UITableView+Extentions.swift */; };
 		F87A689E27D360F100F0B2CB /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A689D27D360F100F0B2CB /* ArticlesViewModel.swift */; };
 		F87A68A027D3643600F0B2CB /* ArticlesModelsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A689F27D3643600F0B2CB /* ArticlesModelsAPI.swift */; };
+		F87A68A227D379C700F0B2CB /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A68A127D379C700F0B2CB /* UIImageView+Extension.swift */; };
 		FA2B6F67C57920BC611BB5A4 /* Pods_ArticlesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5FE73334638265CC03C121 /* Pods_ArticlesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		F87A689B27D35C2A00F0B2CB /* UITableView+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extentions.swift"; sourceTree = "<group>"; };
 		F87A689D27D360F100F0B2CB /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
 		F87A689F27D3643600F0B2CB /* ArticlesModelsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModelsAPI.swift; sourceTree = "<group>"; };
+		F87A68A127D379C700F0B2CB /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 			children = (
 				F87A688427D34B0C00F0B2CB /* Loadable.swift */,
 				F87A689B27D35C2A00F0B2CB /* UITableView+Extentions.swift */,
+				F87A68A127D379C700F0B2CB /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87A68A227D379C700F0B2CB /* UIImageView+Extension.swift in Sources */,
 				F87A683E27D3463E00F0B2CB /* AppDelegate.swift in Sources */,
 				F87A687327D3499D00F0B2CB /* ArticlesVC.swift in Sources */,
 				F87A689027D352CE00F0B2CB /* ApiClient.swift in Sources */,
