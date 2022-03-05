@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController, Loadable {
+class ArticlesVC: UIViewController, Loadable {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,13 +9,13 @@
 import UIKit
 
 enum Destinations {
-    case homeVC
+    case articlesVC
 
     
     var viewcontroller: UIViewController {
         switch self {
-        case .homeVC:
-            return HomeVC()
+        case .articlesVC:
+            return ArticlesVC()
         
         }
     }
