@@ -41,3 +41,5 @@ This application uses the Model-View-ViewModel (referred to as MVVM) UI architec
 * [Alamofire](https://github.com/Alamofire/Alamofire)
 * [RxSwift](https://github.com/ReactiveX/RxSwift)
 * [RxCocoa](https://github.com/ReactiveX/RxSwift)
+* [OHHTTPStubs](https://github.com/AliSoftware/OHHTTPStubs)
+
