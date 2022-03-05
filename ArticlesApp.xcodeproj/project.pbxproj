@@ -27,6 +27,7 @@
 		F87A689527D3586B00F0B2CB /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A689427D3586B00F0B2CB /* ArticlesModel.swift */; };
 		F87A689927D358E200F0B2CB /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A689727D358E200F0B2CB /* ArticlesTableViewCell.swift */; };
 		F87A689A27D358E200F0B2CB /* ArticlesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87A689827D358E200F0B2CB /* ArticlesTableViewCell.xib */; };
+		F87A689C27D35C2A00F0B2CB /* UITableView+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A689B27D35C2A00F0B2CB /* UITableView+Extentions.swift */; };
 		FA2B6F67C57920BC611BB5A4 /* Pods_ArticlesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5FE73334638265CC03C121 /* Pods_ArticlesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		F87A689427D3586B00F0B2CB /* ArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
 		F87A689727D358E200F0B2CB /* ArticlesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewCell.swift; sourceTree = "<group>"; };
 		F87A689827D358E200F0B2CB /* ArticlesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesTableViewCell.xib; sourceTree = "<group>"; };
+		F87A689B27D35C2A00F0B2CB /* UITableView+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extentions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				F87A688427D34B0C00F0B2CB /* Loadable.swift */,
+				F87A689B27D35C2A00F0B2CB /* UITableView+Extentions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				F87A687327D3499D00F0B2CB /* ArticlesVC.swift in Sources */,
 				F87A689027D352CE00F0B2CB /* ApiClient.swift in Sources */,
 				F87A688527D34B0C00F0B2CB /* Loadable.swift in Sources */,
+				F87A689C27D35C2A00F0B2CB /* UITableView+Extentions.swift in Sources */,
 				F87A687A27D349F500F0B2CB /* Destinations.swift in Sources */,
 				F87A688B27D3529000F0B2CB /* Constants.swift in Sources */,
 				F87A688D27D352A900F0B2CB /* ApiRouter.swift in Sources */,
