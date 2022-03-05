@@ -8,22 +8,22 @@
 import UIKit
 
 class ArticlesDetailsVC: UIViewController {
+    // MARK: - Outlets
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var titelLabel: UILabel!
+    @IBOutlet weak var detailsImageView: UIImageView!
+    // MARK: - Properties
     var articlesDetails : ArticlesItem? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        setUpDetails()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Methods
+    private func setUpDetails() {
+        detailsImageView.loadFromUrl(stringUrl: articlesDetails?.media.last?.mediaMetadata.last?.url ?? "")
+        titelLabel.text = articlesDetails?.title
+        descriptionTextView.text = articlesDetails?.abstract
     }
-    */
 
 }

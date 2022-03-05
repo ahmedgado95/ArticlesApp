@@ -30,13 +30,10 @@ class ArticlesVC: UIViewController, Loadable {
         // Do any additional setup after loading the view.
         setupArticlesTableView()
         viewModel.getArticlesModelLApi()
-        setUIText()
         configureBinding()
     }
     // MARK: - Methods
-    private func setUIText() {
-        self.title = "Articles"
-    }
+ 
     
     private func setupArticlesTableView() {
         tableView.registerCell(ofType: ArticlesTableViewCell.self)
@@ -65,13 +62,6 @@ class ArticlesVC: UIViewController, Loadable {
                 self.viewModel.navigateToDetailsVC(article: article )
             }).disposed(by: disposeBag)
         
-//        Observable
-//            .zip(tableView.rx.itemSelected, tableView.rx.modelSelected(ArticlesItem.self))
-//            .bind { [weak self] selectedIndex, branch in
-//
-//                print(selectedIndex, branch.name ?? "")
-//        }
-//        .disposed(by: disposeBag)
     }
     
  
