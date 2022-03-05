@@ -10,15 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ArticlesTableViewCell" rowHeight="199" id="KGk-i7-Jjw" customClass="ArticlesTableViewCell" customModule="ArticlesApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ArticlesTableViewCell" rowHeight="186" id="KGk-i7-Jjw" customClass="ArticlesTableViewCell" customModule="ArticlesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5Y-zR-DgZ">
-                        <rect key="frame" x="0.0" y="9" width="320" height="180"/>
+                        <rect key="frame" x="0.0" y="4" width="320" height="180"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dKe-qT-w3Z">
                                 <rect key="frame" x="8" y="8" width="304" height="164"/>
@@ -57,10 +57,10 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="A5Y-zR-DgZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="OTU-v7-nIy"/>
+                    <constraint firstItem="A5Y-zR-DgZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="OTU-v7-nIy"/>
                     <constraint firstAttribute="trailing" secondItem="A5Y-zR-DgZ" secondAttribute="trailing" id="b8C-ju-adE"/>
                     <constraint firstItem="A5Y-zR-DgZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ucL-rK-CjC"/>
-                    <constraint firstAttribute="bottom" secondItem="A5Y-zR-DgZ" secondAttribute="bottom" constant="10" id="z7x-uK-pEn"/>
+                    <constraint firstAttribute="bottom" secondItem="A5Y-zR-DgZ" secondAttribute="bottom" constant="4" id="z7x-uK-pEn"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -68,7 +68,7 @@
                 <outlet property="articlesImageView" destination="dKe-qT-w3Z" id="ZTS-VB-H3E"/>
                 <outlet property="articlesLabel" destination="ob8-0z-EhF" id="wpS-1v-Naw"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="151.67410714285714"/>
+            <point key="canvasLocation" x="137.68115942028987" y="150"/>
         </tableViewCell>
     </objects>
     <resources>
