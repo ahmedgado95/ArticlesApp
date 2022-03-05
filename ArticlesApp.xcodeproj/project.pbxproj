@@ -20,6 +20,10 @@
 		F87A687827D349D200F0B2CB /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A687727D349D200F0B2CB /* Navigator.swift */; };
 		F87A687A27D349F500F0B2CB /* Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A687927D349F500F0B2CB /* Destinations.swift */; };
 		F87A688527D34B0C00F0B2CB /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A688427D34B0C00F0B2CB /* Loadable.swift */; };
+		F87A688927D3527300F0B2CB /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A688827D3527300F0B2CB /* ApiError.swift */; };
+		F87A688B27D3529000F0B2CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A688A27D3529000F0B2CB /* Constants.swift */; };
+		F87A688D27D352A900F0B2CB /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A688C27D352A900F0B2CB /* ApiRouter.swift */; };
+		F87A689027D352CE00F0B2CB /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A688F27D352CE00F0B2CB /* ApiClient.swift */; };
 		FA2B6F67C57920BC611BB5A4 /* Pods_ArticlesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5FE73334638265CC03C121 /* Pods_ArticlesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,10 @@
 		F87A687727D349D200F0B2CB /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		F87A687927D349F500F0B2CB /* Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destinations.swift; sourceTree = "<group>"; };
 		F87A688427D34B0C00F0B2CB /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		F87A688827D3527300F0B2CB /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		F87A688A27D3529000F0B2CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F87A688C27D352A900F0B2CB /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		F87A688F27D352CE00F0B2CB /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,6 @@
 				A45EF0C00A286DAA8E9FE556 /* Pods-ArticlesAppTests.debug.xcconfig */,
 				0503B67400B98B2DC8D71CFC /* Pods-ArticlesAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,6 +178,7 @@
 		F87A686D27D348D000F0B2CB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F87A688727D3523500F0B2CB /* Network */,
 				F87A688327D34AF300F0B2CB /* Extensions */,
 				F87A687527D349AF00F0B2CB /* Navigation */,
 			);
@@ -220,6 +228,17 @@
 				F87A688427D34B0C00F0B2CB /* Loadable.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F87A688727D3523500F0B2CB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F87A688827D3527300F0B2CB /* ApiError.swift */,
+				F87A688A27D3529000F0B2CB /* Constants.swift */,
+				F87A688C27D352A900F0B2CB /* ApiRouter.swift */,
+				F87A688F27D352CE00F0B2CB /* ApiClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,9 +482,13 @@
 			files = (
 				F87A683E27D3463E00F0B2CB /* AppDelegate.swift in Sources */,
 				F87A687327D3499D00F0B2CB /* HomeVC.swift in Sources */,
+				F87A689027D352CE00F0B2CB /* ApiClient.swift in Sources */,
 				F87A688527D34B0C00F0B2CB /* Loadable.swift in Sources */,
 				F87A687A27D349F500F0B2CB /* Destinations.swift in Sources */,
+				F87A688B27D3529000F0B2CB /* Constants.swift in Sources */,
+				F87A688D27D352A900F0B2CB /* ApiRouter.swift in Sources */,
 				F87A687827D349D200F0B2CB /* Navigator.swift in Sources */,
+				F87A688927D3527300F0B2CB /* ApiError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
