@@ -16,9 +16,8 @@ extension UIImageView {
         let imageBase = stringUrl
         let imageurl = URL(string : imageBase.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)!)
        
-        let image = UIImage(named: "Logo")
         
-        self.kf.setImage(with: imageurl , placeholder: image, options: [.cacheOriginalImage])
+        self.kf.setImage(with: imageurl , placeholder: nil, options: [.cacheOriginalImage])
     }
     
 

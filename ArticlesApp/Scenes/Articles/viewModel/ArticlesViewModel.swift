@@ -12,7 +12,7 @@ import RxCocoa
 protocol ArticlesViewModelProtocol {
     var articlesModelListSubject: BehaviorRelay<[ArticlesItem]> { get }
     func getArticlesModelLApi()
-    func navigateToDetailsVC()
+    func navigateToDetailsVC(article : ArticlesItem)
     var showProgress: PublishSubject<Bool> { get }
     var error: PublishSubject<Error> { get }
 }
@@ -21,7 +21,6 @@ class ArticlesViewModel: ArticlesViewModelProtocol {
     // MARK: - Properties
     private let disposeBag = DisposeBag()
     private var articlesModelsApi: ApiClientProtocol
-    private var totalPages: Int = 0
     private var pageNumber: Int = 7
     let error = PublishSubject<Error>()
     let showProgress = PublishSubject<Bool>()
@@ -40,8 +39,8 @@ class ArticlesViewModel: ArticlesViewModelProtocol {
     // MARK: - Methods
   
     
-    func navigateToDetailsVC(modelNiceName: String, modelName: String) {
-//        try? AppNavigator().push(.detailsVC(carMake: self.carMakeName, modelNiceName: modelNiceName, modelName: modelName))
+    func navigateToDetailsVC(article: ArticlesItem) {
+        try? AppNavigator().push(.detailsVC(articlesVC: article))
     }
   
     func getArticlesModelLApi() {
@@ -49,8 +48,6 @@ class ArticlesViewModel: ArticlesViewModelProtocol {
         self.articlesModelsApi.request(ArticlesModelsAPI.articles(period: "\(pageNumber)"), decodingType:  ArticlesModel.self).observe(on: MainScheduler.instance)
             .subscribe(onNext: { response in
                 self.articlesModelsList.append(contentsOf: response.results )
-                self.totalPages = 30
-                self.pageNumber += 1
                 self.showProgress.onNext(false)
             }, onError: { error in
                 self.error.onNext(error)

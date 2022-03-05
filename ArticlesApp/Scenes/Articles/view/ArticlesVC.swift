@@ -59,12 +59,21 @@ class ArticlesVC: UIViewController, Loadable {
             cell.setupCell(with: articlesItem)
         }.disposed(by: disposeBag)
         
-//        carMakesCollectionView.rx.modelSelected(CarMakesNamesModel.self)
-//            .subscribe(onNext: { [weak self] model in
-//                guard let self = self else { return }
-//                self.viewModel.navigateToCarModelVC(carMakeName: model.name ?? "")
-//            }).disposed(by: disposeBag)
+        tableView.rx.modelSelected(ArticlesItem.self)
+            .subscribe(onNext: { [weak self] article in
+                guard let self = self else { return }
+                self.viewModel.navigateToDetailsVC(article: article )
+            }).disposed(by: disposeBag)
+        
+//        Observable
+//            .zip(tableView.rx.itemSelected, tableView.rx.modelSelected(ArticlesItem.self))
+//            .bind { [weak self] selectedIndex, branch in
+//
+//                print(selectedIndex, branch.name ?? "")
+//        }
+//        .disposed(by: disposeBag)
     }
     
+ 
 
 }
