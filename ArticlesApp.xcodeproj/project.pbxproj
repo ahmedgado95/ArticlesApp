@@ -33,6 +33,7 @@
 		F87A68A227D379C700F0B2CB /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A68A127D379C700F0B2CB /* UIImageView+Extension.swift */; };
 		F87A68A627D37D5900F0B2CB /* ArticlesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A68A427D37D5900F0B2CB /* ArticlesDetailsVC.swift */; };
 		F87A68A727D37D5900F0B2CB /* ArticlesDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87A68A527D37D5900F0B2CB /* ArticlesDetailsVC.xib */; };
+		F87A68A927D3A51E00F0B2CB /* ArticlesViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A68A827D3A51E00F0B2CB /* ArticlesViewModelTest.swift */; };
 		FA2B6F67C57920BC611BB5A4 /* Pods_ArticlesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5FE73334638265CC03C121 /* Pods_ArticlesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		F87A68A127D379C700F0B2CB /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		F87A68A427D37D5900F0B2CB /* ArticlesDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesDetailsVC.swift; sourceTree = "<group>"; };
 		F87A68A527D37D5900F0B2CB /* ArticlesDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesDetailsVC.xib; sourceTree = "<group>"; };
+		F87A68A827D3A51E00F0B2CB /* ArticlesViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				F87A685427D3464400F0B2CB /* ArticlesAppTests.swift */,
+				F87A68A827D3A51E00F0B2CB /* ArticlesViewModelTest.swift */,
 			);
 			path = ArticlesAppTests;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F87A685527D3464400F0B2CB /* ArticlesAppTests.swift in Sources */,
+				F87A68A927D3A51E00F0B2CB /* ArticlesViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
