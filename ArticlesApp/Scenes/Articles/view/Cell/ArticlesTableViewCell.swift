@@ -23,5 +23,6 @@ class ArticlesTableViewCell: UITableViewCell {
     }
     func setupCell(with dataModel: ArticlesItem) {
         articlesLabel.text = dataModel.title
+        articlesImageView.loadFromUrl(stringUrl: dataModel.media.last?.mediaMetadata.last?.url ?? "")
     }
 }
