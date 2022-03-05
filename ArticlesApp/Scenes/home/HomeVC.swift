@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  ArticlesApp
 //
 //  Created by ahmed gado on 05/03/2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController, Loadable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +16,3 @@ class ViewController: UIViewController {
 
 
 }
-
