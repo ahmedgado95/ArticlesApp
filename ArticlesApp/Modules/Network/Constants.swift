@@ -9,13 +9,13 @@ import Foundation
 
 struct Constants {
     //The API's base URL
-    static let BASEURL = ""
-    static let IMAGEBASEURL = ""
+    static let BASEURL = "https://api.nytimes.com/svc/mostpopular/v2/viewed/"
+    static let APIKEY  = "PkLIEgemrBsQBw0wKHzmi8jUiAJcr0nx"
 
     
     //The parameters (Queries) that we're gonna use
     struct Parameters {
-        static let APIKEY = "api_key"
+        static let APIKEY = "api-key"
     }
     
     //The header fields

@@ -11,7 +11,7 @@ import Foundation
 struct ArticlesModel: Codable {
     let status, copyright: String
     let numResults: Int
-    let results: [Result]
+    let results: [ArticlesItem]
 
     enum CodingKeys: String, CodingKey {
         case status, copyright
@@ -21,7 +21,7 @@ struct ArticlesModel: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct ArticlesItem: Codable {
     let uri: String
     let url: String
     let id, assetID: Int

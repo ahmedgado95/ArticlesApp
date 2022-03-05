@@ -21,5 +21,7 @@ class ArticlesTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+    func setupCell(with dataModel: ArticlesItem) {
+        articlesLabel.text = dataModel.title
+    }
 }

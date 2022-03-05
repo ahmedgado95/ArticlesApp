@@ -15,7 +15,8 @@ enum Destinations {
     var viewcontroller: UIViewController {
         switch self {
         case .articlesVC:
-            return ArticlesVC()
+            let viewModel = ArticlesViewModel()
+            return ArticlesVC(with: viewModel)
         
         }
     }
